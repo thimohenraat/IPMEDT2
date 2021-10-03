@@ -21,6 +21,13 @@ camera.position.setZ(30);
 
 renderer.render(scene, camera);
 
+//resize
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+})
+
 //controller
 // const controls =  new OrbitControls(camera, renderer.domElement)
 
@@ -42,15 +49,15 @@ scene.background = spaceTexture;
 
 //bloem
 const glftLoader = new GLTFLoader();
+let bloem;
 
 glftLoader.load("bloem.glb", (gltf) => {
-  let bloem = gltf.scene;
+  bloem = gltf.scene;
   bloem.rotation.x = 1.5;
   bloem.position.set(-1, 2, 20);
 
   scene.add(bloem);
 })
-
 
 //aarde
 const aardeTexture = new THREE.TextureLoader().load('images/aarde.jpg')
@@ -81,6 +88,20 @@ const addStar = () => {
 
 Array(200).fill().forEach(addStar)
 
+
+const beweegBloem = () => {
+  let positie = window.scrollY;
+  positie = positie/50;
+  console.log(positie);
+  if (bloem){  
+    bloem.position.z = 20 - positie;
+  }
+}
+
+document.body.onscroll = beweegBloem;
+beweegBloem();
+
+
 const clock = new THREE.Clock();
 
 function animate() {
@@ -89,7 +110,7 @@ function animate() {
   aarde.rotation.y += 0.002;
 
   const elapsedTime = clock.getElapsedTime() * 0.2;
-  scene.position.y = Math.sin(elapsedTime * 13) * 0.13;
+  scene.position.y = Math.sin(elapsedTime * 12) * 0.12;
 
   // controls.update();
 

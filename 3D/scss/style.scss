@@ -6,17 +6,20 @@ canvas{
   left: 0;
 }
 
+body{
+  display: flex;
+  justify-content: center;
+}
+
 main {
   position: absolute;
   margin: auto;
   color: white;
   font-family: 'EB Garamond', serif;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 50vh);
+  justify-items: center;
 }
 
 $color: #ffffff50;
@@ -52,5 +55,8 @@ header{
   align-self: end;
   &__text{
     margin: 0;
+  }
+  &__arrow{
+    padding-bottom: 2vh;
   }
 }

@@ -5,6 +5,15 @@ canvas {
   left: 0;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 main {
   position: absolute;
   margin: auto;
@@ -16,6 +25,7 @@ main {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (50vh)[4];
       grid-template-rows: repeat(4, 50vh);
+  justify-items: center;
 }
 
 header {
@@ -55,5 +65,9 @@ header {
 
 .scroll__text {
   margin: 0;
+}
+
+.scroll__arrow {
+  padding-bottom: 2vh;
 }
 /*# sourceMappingURL=style.css.map */
