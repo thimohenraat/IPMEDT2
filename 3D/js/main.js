@@ -29,7 +29,7 @@ window.addEventListener('resize', () => {
 })
 
 //controller
-// const controls =  new OrbitControls(camera, renderer.domElement)
+const controls =  new OrbitControls(camera, renderer.domElement)
 
 //licht
 const pointLight = new THREE.PointLight(0xFFFFFF);
@@ -112,7 +112,7 @@ function animate() {
   const elapsedTime = clock.getElapsedTime() * 0.2;
   scene.position.y = Math.sin(elapsedTime * 12) * 0.12;
 
-  // controls.update();
+  controls.update();
 
   renderer.render(scene, camera);
 }
