@@ -11,9 +11,12 @@ main {
   margin: auto;
   color: white;
   font-family: 'EB Garamond', serif;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 50vh);
 }
 
 $color: #ffffff50;
@@ -25,6 +28,9 @@ header{
     0 0 30px $color,
     0 0 50px $color,
     0 0 70px $color;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
 }
 
 .titel{
@@ -36,5 +42,15 @@ header{
   &__punk{
     margin: 0;
     font-family: 'Julee', cursive;
+  }
+}
+
+.scroll{
+  text-align: center;
+  grid-column: 2;
+  grid-row: 2;
+  align-self: end;
+  &__text{
+    margin: 0;
   }
 }
