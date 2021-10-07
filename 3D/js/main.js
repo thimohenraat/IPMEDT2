@@ -118,3 +118,25 @@ function animate() {
 }
 
 animate();
+
+const observer = new IntersectionObserver(entries => {
+  // Loop over de text wrapper
+  entries.forEach(entry => {
+    const text = entry.target.querySelector('.text');
+    // als het zichtbaar is doe dit
+    if (entry.isIntersecting) {
+      // voeg de animatie toe
+      text.classList.add('text__transition');
+	    return; // na het toevoegen van de class, ga uit de functie
+    }
+    //als je de text niet meer ziet, verwijder de class
+    text.classList.remove('text__transition');
+  });
+});
+
+let target = '.text__wrapper';
+document.querySelectorAll(target).forEach((i) => {
+    if (i) {
+        observer.observe(i);
+    }
+});
