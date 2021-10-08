@@ -75,8 +75,8 @@ main {
   font-weight: 500;
   opacity: 0;
   margin-top: 10vh;
-  -webkit-transition: opacity 5s ease-in , margin-top 2.5s ease;
-  transition: opacity 5s ease-in , margin-top 2.5s ease;
+  -webkit-transition: opacity 2.5s ease-in , margin-top 1.5s ease;
+  transition: opacity 2.5s ease-in , margin-top 1.5s ease;
 }
 
 .text__wrapper {
