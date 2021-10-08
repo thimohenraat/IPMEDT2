@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "build": "parcel build index.html ",
+    "serve": "vite preview",
+    "parcelDev": "parcel index.html"
   },
   "devDependencies": {
     "vite": "^2.6.0"
