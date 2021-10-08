@@ -52,6 +52,7 @@ main {
 }
 
 .scroll {
+  font-family: 'Hachi Maru Pop', cursive;
   text-align: center;
   -ms-grid-column: 2;
   grid-column: 2;
@@ -71,11 +72,11 @@ main {
 }
 
 .text {
+  font-weight: 500;
   opacity: 0;
-  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
-  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
-  transition: opacity 1.5s ease, transform 1.5s ease;
-  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  margin-top: 5vh;
+  -webkit-transition: opacity 1.5s ease, margin-top 1.5s ease;
+  transition: opacity 1.5s ease, margin-top 1.5s ease;
 }
 
 .text__wrapper {
@@ -114,7 +115,6 @@ main {
 
 .text__transition {
   opacity: 1;
-  -webkit-transform: none;
-          transform: none;
+  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
