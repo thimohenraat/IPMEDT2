@@ -62,8 +62,8 @@ $color: #ffffff50;
 .text{
   font-weight: 500;
   opacity: 0; 
-  margin-top: 5vh;
-  transition: opacity 1.5s ease, margin-top 1.5s ease;
+  margin-top: 10vh;
+  transition: opacity 5s ease-in , margin-top 2.5s ease;
 
   &__wrapper{
     font-size: 1.5rem;
@@ -87,9 +87,9 @@ $color: #ffffff50;
     grid-column: 2;
     grid-row: 6;
   }
-}
 
-.text__transition {
-  opacity: 1;
-  margin-top: 0;
+  &__transition {
+    opacity: 1;
+    margin-top: 0;
+  }
 }

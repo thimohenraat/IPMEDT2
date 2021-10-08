@@ -89,17 +89,17 @@ const addStar = () => {
 Array(200).fill().forEach(addStar)
 
 
-const beweegBloem = () => {
-  let positie = window.scrollY;
-  positie = positie/50;
-  console.log(positie);
-  if (bloem){  
-    bloem.position.z = 20 - positie;
-  }
-}
+// const beweegBloem = () => {
+//   let positie = window.scrollY;
+//   positie = positie/50;
+//   console.log(positie);
+//   if (bloem){  
+//     bloem.position.z = 20 - positie;
+//   }
+// }
 
-document.body.onscroll = beweegBloem;
-beweegBloem();
+// document.body.onscroll = beweegBloem;
+// beweegBloem();
 
 
 const clock = new THREE.Clock();
@@ -119,7 +119,8 @@ function animate() {
 
 animate();
 
-const observer = new IntersectionObserver(entries => {
+
+const observerText = new IntersectionObserver(entries => {
   // Loop over de text wrapper
   entries.forEach(entry => {
     const text = entry.target.querySelector('.text');
@@ -137,6 +138,34 @@ const observer = new IntersectionObserver(entries => {
 let target = '.text__wrapper';
 document.querySelectorAll(target).forEach((i) => {
     if (i) {
-        observer.observe(i);
+        observerText.observe(i);
     }
 });
+
+
+const fadeOutOnScroll = (element)  => {
+  const titel = element[0]
+  
+  let distanceToTop = window.pageYOffset + titel.getBoundingClientRect().top;
+  let elementHeight = titel.offsetHeight;
+  let scrollTop = document.documentElement.scrollTop;
+  console.log(1 - (scrollTop - (distanceToTop - 175)) / elementHeight);
+  
+  let opacity = 1;
+  
+  if (scrollTop > (distanceToTop - 175)) {
+    opacity = 1 - (scrollTop - (distanceToTop - 175)) / elementHeight;
+  }
+  
+  if (opacity >= 0) {
+    titel.style.opacity = opacity;
+  }
+}
+
+const scrollHandler = () => {
+  fadeOutOnScroll(document.getElementsByClassName('titel'));
+}
+
+window.addEventListener('scroll', scrollHandler);
+
+// document.body.onscroll = fadeOutOnScroll(document.getElementsByClassName('titel'));
