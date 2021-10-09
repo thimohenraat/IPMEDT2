@@ -1,4 +1,4 @@
-17820
+17823
 90C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\@babel\core\lib\transform-file.js121012626000000000 0
 61C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\package-lock.json132782485159167975 0
 87C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\es-abstract\2015\InLeapYear.js121436361000000000 0
@@ -10,7 +10,7 @@
 80C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\source-map\package.json132781663231209186 0
 94C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\three\src\materials\ShadowMaterial.js121436361000000000 0
 76C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\nth-check\README.md121436361000000000 0
-54C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\.gitignore132777388907932081 0
+54C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\.gitignore132782492136776916 0
 76C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\split2\package.json132781663227738451 0
 67C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\estraverse132781663246194526 1
 69C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\lodash.clone132781663241147992 1
@@ -47,7 +47,7 @@
 127C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\bl\node_modules\readable-stream\lib\internal\streams\stream-browser.js121436361000000000 0
 72C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\fast-deep-equal132781663246144654 1
 116C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\postcss-modules-values\node_modules\source-map\package.json132781663235034328 0
-48C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist132782487530940904 1
+48C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist132782494004788499 1
 70C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\object.assign132781663239263035 1
 123C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\three\src\renderers\shaders\ShaderChunk\envmap_pars_vertex.glsl.js121436361000000000 0
 71C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\string_decoder132781663231169290 1
@@ -80,10 +80,10 @@
 72C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\vendors\license121436361000000000 0
 77C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\msgpackr-extract\src132781663092719411 1
 93C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\modules\es.number.epsilon.js121436361000000000 0
-50C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\images132782471280262337 1
+50C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\images132782493783129014 1
 77C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\terser\dist\.gitkeep121436361000000000 0
 96C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\es-abstract\2019\IsGenericDescriptor.js121436361000000000 0
-54C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\index.html132782484679825027 0
+54C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\index.html132782494003135544 0
 84C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\es-abstract\2019\ToInt32.js121436361000000000 0
 77C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\pn\string_decoder.js131594838820000000 0
 74C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\asynckit\index.js131082686050000000 0
@@ -117,7 +117,7 @@
 83C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\vite\src\client\overlay.ts132772158440000000 0
 91C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\tweetnacl\PULL_REQUEST_TEMPLATE.md131260969540000000 0
 93C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\stable\array\virtual\flat.js121436361000000000 0
-56C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\package.json132782485157751758 0
+56C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\package.json132782490037932263 0
 76C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\is-json\.travis.yml131014996140000000 0
 91C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\type-fest\source\set-optional.d.ts121436361000000000 0
 91C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\features\weak-set\index.js121436361000000000 0
@@ -144,7 +144,7 @@
 100C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\es-abstract\helpers\getSymbolDescription.js121436361000000000 0
 65C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\@nodelib132781663204644260 1
 71C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\pako\lib\utils132781663101515904 1
-59C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\scss\style.scss132782482837672422 0
+59C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\scss\style.scss132782493085076422 0
 116C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\postcss-modules-scope\node_modules\postcss\lib\warn-once.js121436361000000000 0
 71C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\whatwg-url\lib132781663047765368 1
 67C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\uuid\v3.js121436361000000000 0
@@ -3056,7 +3056,7 @@
 94C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\es-abstract\5\CheckObjectCoercible.js121436361000000000 0
 79C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\ws\lib\event-target.js121436361000000000 0
 98C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\three\examples\jsm\renderers\webgpu\nodes132776498061700627 1
-72C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\down_white.1c0a00b8.svg132782442003855124 0
+72C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\down_white.1c0a00b8.svg132782487936086876 0
 70C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\three\LICENSE121436361000000000 0
 88C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\postcss-convert-values\dist\lib132781663083404301 1
 79C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\is-descriptor\index.js131452119940000000 0
@@ -3173,7 +3173,7 @@
 94C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\three\examples\js\misc\TubePainter.js121436361000000000 0
 74C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\lodash\mapKeys.js121436361000000000 0
 98C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\which-boxed-primitive\.github\FUNDING.yml121436361000000000 0
-55C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\images132782471378526427 1
+55C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\images132782493882414079 1
 85C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\three\examples\jsm\offscreen132776498057201623 1
 125C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser132781663081609105 1
 66C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\which\bin132781663045150174 1
@@ -7710,7 +7710,7 @@
 75C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\regex-not\index.js131635674370000000 0
 74C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\regex-not\LICENSE131635649810000000 0
 84C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\regenerator-runtime\path.js121436361000000000 0
-71C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.a5586785.css.map132782442005121727 0
+71C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.a5586785.css.map132782487937106884 0
 86C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\regenerator-runtime\README.md121436361000000000 0
 113C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\css-modules-loader-core\node_modules\postcss\lib\rule.js131386303530000000 0
 78C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\querystring\decode.js121436361000000000 0
@@ -11590,6 +11590,7 @@
 104C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\is-descriptor\node_modules\kind-of\package.json132781663244159941 0
 90C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\es-abstract\2018\IsConstructor.js121436361000000000 0
 101C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\is-descriptor\node_modules\kind-of\README.md131523517230000000 0
+73C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\images\photo_camera_white.svg132782493539587080 0
 79C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\is-date-object\.github132781663109848610 1
 92C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\modules\es.object.values.js121436361000000000 0
 78C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\is-date-object\.nycrc121436361000000000 0
@@ -11975,7 +11976,7 @@
 113C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\expand-brackets\node_modules\extend-shallow\package.json132781663243162623 0
 94C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\highlight.js\styles\codepen-embed.css121436361000000000 0
 77C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\array-unique\LICENSE130717287600000000 0
-70C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.d3d83061.js.map132782470221372799 0
+70C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.d3d83061.js.map132782487937096899 0
 143C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\@parcel\node-libs-browser\node_modules\readable-stream\lib\internal\streams\destroy.js121436361000000000 0
 84C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\es-abstract\2017\WeekDay.js121436361000000000 0
 88C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\highlight.js\styles\darcula.css121436361000000000 0
@@ -14700,7 +14701,7 @@
 93C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\stable\string\virtual\big.js121436361000000000 0
 95C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\stable\string\virtual\blink.js121436361000000000 0
 97C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\stable\string\virtual\italics.js121436361000000000 0
-59C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.html132782487530601834 0
+59C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.html132782494004768708 0
 91C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\caniuse-lite\dist\lib\supported.js121436361000000000 0
 98C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\stable\string\virtual\iterator.js121436361000000000 0
 94C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\stable\string\virtual\link.js121436361000000000 0
@@ -14875,7 +14876,7 @@
 114C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\caniuse-lite\data\features\css-font-rendering-controls.js121436361000000000 0
 93C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\modules\es.array.is-array.js121436361000000000 0
 88C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\modules\es.array.map.js121436361000000000 0
-74C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\photo_camera.b05365b8.svg132782475745405346 0
+74C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\photo_camera.b05365b8.svg132782487935109494 0
 87C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\modules\es.array.of.js121436361000000000 0
 97C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\modules\es.array.reduce-right.js121436361000000000 0
 86C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\core-js\es\typed-array\set.js121436361000000000 0
@@ -17475,6 +17476,7 @@
 80C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\@babel\traverse\scripts132781663081748744 1
 102C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\@babel\traverse\scripts\generators\asserts.js121012626000000000 0
 105C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\@babel\traverse\scripts\generators\validators.js121012626000000000 0
+78C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\images\photo_camera_white.svg132782493900743071 0
 88C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\@babel\traverse\node_modules\ms132781663221928876 1
 99C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\@babel\traverse\node_modules\ms\license.md121436361000000000 0
 98C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\node_modules\@babel\traverse\node_modules\ms\readme.md121436361000000000 0
@@ -17809,11 +17811,12 @@
 58C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\bloem.glb132777376477553594 0
 72C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\down_white.f30b4ca9.svg132782487530591856 0
 69C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\favicon.59a21059.svg132782487492869655 0
-69C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\favicon.5d6bb6e1.svg132782442003885042 0
+69C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\favicon.5d6bb6e1.svg132782487935089555 0
 71C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.8df2ee1e.css.map132782487530901010 0
-67C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.a5586785.css132782442004732773 0
-66C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.d3d83061.js132782470221040517 0
+67C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.a5586785.css132782487936630817 0
+66C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.d3d83061.js132782487936630817 0
 70C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\index.efe3db4c.js.map132782487530891046 0
+80C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\photo_camera_white.c9598663.svg132782494004342345 0
 65C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\images\aarde.jpg132777376477613428 0
 70C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\images\down_black.svg132777376477633380 0
 70C:\Users\Thimo Henraat\Documents\IPMEDT2\3D\dist\images\down_white.svg132777376477633380 0

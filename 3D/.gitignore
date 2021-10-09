@@ -3,4 +3,4 @@ node_modules
 dist
 dist-ssr
 *.local
-cc001662b4fa88d5.txt
+.parcel-cache
