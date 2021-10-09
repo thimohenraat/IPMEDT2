@@ -71,6 +71,13 @@ main {
   padding-bottom: 2vh;
 }
 
+.photo {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
 .text {
   font-weight: 500;
   opacity: 0;
@@ -83,6 +90,11 @@ main {
   font-size: 1.5rem;
   text-align: center;
   place-self: center;
+}
+
+.text__transition {
+  opacity: 1;
+  margin-top: 0;
 }
 
 .text__1 {
@@ -111,10 +123,5 @@ main {
   grid-column: 2;
   -ms-grid-row: 6;
   grid-row: 6;
-}
-
-.text__transition {
-  opacity: 1;
-  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
