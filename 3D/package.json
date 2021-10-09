@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "parcel build index.html ",
+    "build": "parcel build index.html scss/style.scss ",
     "serve": "vite preview",
     "parcelDev": "parcel index.html"
   },
