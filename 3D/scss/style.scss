@@ -28,6 +28,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(7, 50vh);
   justify-items: center;
+  transition: background 1s;
 }
 
 $color: #ffffff50;
@@ -59,10 +60,15 @@ $color: #ffffff50;
     padding-bottom: 2vh;
   }
 }
-
+ 
 .photo{
   grid-column: 2;
   grid-row: 7;
+  align-self: end;
+
+  &__icon{
+    width: 5rem;
+  }
 } 
 
 .text{

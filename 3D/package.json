@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "parcel build index.html scss/style.scss ",
     "serve": "vite preview",
-    "parcelDev": "parcel index.html"
+    "parcelDev": "parcel index.html scss/style.scss"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-rc.0",

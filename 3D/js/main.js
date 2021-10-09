@@ -194,3 +194,14 @@ const scrollHandler = () => {
 }
 
 window.addEventListener('scroll', scrollHandler);
+
+
+const makePicture = () => {
+  document.querySelector('main').style.background = "#FFFFFF";
+  setTimeout(() => { document.querySelector('main').style.background = "none"; }, 500);
+}
+
+let photo_icon = document.getElementById('photoIcon');
+
+photo_icon.addEventListener("click", makePicture);
+
