@@ -8,7 +8,7 @@ import {
 
 import {
   GLTFLoader
-} from 'three/examples/jsm/loaders/GLTFLoader'
+} from 'three/examples/jsm/loaders/GLTFLoader';
 
 
 const scene = new THREE.Scene();
@@ -189,8 +189,10 @@ const scrollHandler = () => {
   setPosition('z', originZ, targetZ);
 
   let scale = scrollPercentRounded / 100;
-
-  bloem.scale.set(scale,scale,scale)
+  if (bloem) {
+    bloem.scale.set(scale,scale,scale)
+  }
+  
 }
 
 window.addEventListener('scroll', scrollHandler);
@@ -198,7 +200,9 @@ window.addEventListener('scroll', scrollHandler);
 
 const makePicture = () => {
   document.querySelector('main').style.background = "#FFFFFF";
-  setTimeout(() => { document.querySelector('main').style.background = "none"; }, 500);
+  setTimeout(() => { 
+    window.location.href = "plaatje.html";
+  }, 1000);
 }
 
 let photo_icon = document.getElementById('photoIcon');
