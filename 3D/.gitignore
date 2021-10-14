@@ -4,3 +4,5 @@ dist
 dist-ssr
 *.local
 .parcel-cache
+/.parcel-cache
+.parcel-cache/
