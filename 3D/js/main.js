@@ -8,7 +8,7 @@ import {
 
 import {
   GLTFLoader
-} from 'three/examples/jsm/loaders/GLTFLoader'
+} from 'three/examples/jsm/loaders/GLTFLoader';
 
 
 const scene = new THREE.Scene();
@@ -58,7 +58,7 @@ let bloem;
 glftLoader.load("bloem.glb", (gltf) => {
   bloem = gltf.scene;
   bloem.rotation.x = 1.5;
-  bloem.position.set(25, -50, -90);
+  bloem.position.set(25, -50, -125);
 
   scene.add(bloem);
 })
@@ -93,19 +93,6 @@ const addStar = () => {
 }
 
 Array(200).fill().forEach(addStar)
-
-
-// const beweegBloem = () => {
-//   let positie = window.scrollY;
-//   positie = positie/50;
-//   // console.log(positie;
-//   if (bloem){  
-//     bloem.position.z = 20 - positie;
-//   }
-// }
-
-// document.body.onscroll = beweegBloem;
-// beweegBloem();
 
 
 const clock = new THREE.Clock();
@@ -185,7 +172,7 @@ const scrollHandler = () => {
 
   let originX = 25;
   let originY = -50;
-  let originZ = -90;
+  let originZ = -125;
 
   const setPosition = (axis, origin, target) => {
     let distance;
@@ -201,6 +188,24 @@ const scrollHandler = () => {
   setPosition('y', originY, targetY);
   setPosition('z', originZ, targetZ);
 
+  let scale = scrollPercentRounded / 100;
+  if (bloem) {
+    bloem.scale.set(scale,scale,scale)
+  }
+  
 }
 
 window.addEventListener('scroll', scrollHandler);
+
+
+const makePicture = () => {
+  document.querySelector('main').style.background = "#FFFFFF";
+  setTimeout(() => { 
+    window.location.href = "plaatje.html";
+  }, 1000);
+}
+
+let photo_icon = document.getElementById('photoIcon');
+
+photo_icon.addEventListener("click", makePicture);
+
