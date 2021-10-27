@@ -8,7 +8,7 @@
 
 body{
     opacity: 1;
-    transition: 10s opacity;
+    transition: 0.1s opacity;
 }
 
 body.fade-out {
@@ -98,34 +98,32 @@ body.fade-out {
         display: inline-block;
         height:10vh;
         width:70vw;
-        color:black;
-        border: #2d91c2 solid 4px;
+        color:white;
+        border: white solid 4px;
         border-radius: 0.4rem;
         bottom:0;
         z-index: 1;
     }
 
     .tsunami{
-        top:60%;
-        background: white;
+        top:40%;
+        background: linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%);
         background-repeat: repeat-x;
         animation: animate-b 8s linear infinite;
     }
     
     .aardbeving{
-        top:40%;
-        background: burlywood;
+        top:60%;
+        background: linear-gradient(to bottom, #28AD43 0%,#196E2A 100%);
     }
     
     .tsunami:hover{
-        background:#2d91c2;
         transition: 0.3s;
         border:white solid 4px;
         font-weight: bold;
         
     }
     .aardbeving:hover{
-        background: burlywood;
         transition: 0.3s;
         border:white solid 4px;
         font-weight: bold;
