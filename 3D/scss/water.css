@@ -6,6 +6,16 @@
     scroll-behavior: smooth;
 }
 
+body{
+    opacity: 1;
+    transition: 10s opacity;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
+
 
 
 @media (min-width: 400px) {
@@ -24,7 +34,7 @@
         left: 0;
         width: 1200vw;
         height: 20vh;  /* Deze altijd zelfde rem als background size*/ 
-        background: url(/img/wavvvy.png);
+        background: url(/images/wavvvy.png);
         background-size: 40rem 40rem;
         background-repeat: repeat-x;
         transition: ease-in 2s;

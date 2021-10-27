@@ -8,6 +8,11 @@
     <title>Tsunami</title>
 </head>
 <body>
+    <script>
+        // inline script is de enige manier om dit effect te laten werken, zodra de body word ingeladen.
+        document.body.classList.add('fade-out');
+      </script>
+
     <section class="bovenwater">
         <div class="sun"></div>
 
@@ -29,6 +34,8 @@
     <section class="underwater">
         <figure class="flower"><img id="bloem" src="/images/bloem.png" alt="flower"></figure>
     </section>
+
+   
 </body>
 <script src="/js/water.js"></script>
 </html>
