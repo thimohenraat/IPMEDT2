@@ -8,160 +8,289 @@
 
 
 
-.bovenwater{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%)
-}
+@media (min-width: 400px) {
+
+    section{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%);
+        overflow: hidden;
+    }
     
-section{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%);
-    overflow: hidden;
-}
-
-section .wave{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 20vh;  /* Deze altijd zelfde rem als background size*/ 
-    background: url(/images/wavvvy.png);
-    background-size: 40rem 40rem;
-    background-repeat: repeat-x;
-    transition: ease-in 2s;
-}
-
-section .wave1{
-    animation: animate 30s linear infinite;
-    z-index: 4;
-    opacity: 1;
-    animation-delay: 0s;
-}
-
-section .wave2{
-    animation: animate 20s linear infinite;
-    z-index: 3;
-    opacity: 0.7;
-    animation-delay: -2s;
-    bottom:0.75rem;
-}
-
-section .wave3{
-    animation: animate 30s linear infinite;
-    z-index: 2;
-    opacity: 0.5;
-    animation-delay: -5s;
-    bottom:0.5rem;
-}
-section .wave4{
-    animation: animate 20s linear infinite;
-    z-index: 1;
-    opacity: 0.2;
-    animation-delay: -8s;
-    bottom:0;
-}
-
-button{
-    position: absolute;
-    display: inline-block;
-    height:4rem;
-    width:60vw;
-    background: rgb(17, 65, 138);
-    color: white;
-    border: none;
-    border-radius: 0.4rem;
-    bottom:0;
-    z-index: 1;
-}
-.tsunami{
-    top:60%;
-}
-.aardbeving{
-    top:40%;
-}
-
-.underwater{
-    z-index: 1000;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-    width:100%;
+    section .wave{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 1200vw;
+        height: 20vh;  /* Deze altijd zelfde rem als background size*/ 
+        background: url(/images/wavvvy.png);
+        background-size: 40rem 40rem;
+        background-repeat: repeat-x;
+        transition: ease-in 2s;
+        }
     
-}
-
-a{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-a:visited{
-    color: white;
-}
-
-figure{
-    margin-bottom: -10rem;
-}
-
-figure > img{
-    width: 10rem;
-    height: 10rem;
-}
-
-
-@keyframes animate{
-    0%{
-        background-position-x: 0;
+    section .wave1{
+        animation: animate 30s linear infinite;
+        z-index: 4;
+        opacity: 1;
+        animation-delay: 0s;
     }
-    100%{
-        background-position-x: 50rem;
+    
+    section .wave2{
+        animation: animate 20s linear infinite;
+        z-index: 3;
+        opacity: 0.7;
+        animation-delay: -2s;
+        bottom:0.75rem;
+    }
+    
+    section .wave3{
+        animation: animate 30s linear infinite;
+        z-index: 2;
+        opacity: 0.5;
+        animation-delay: -5s;
+        bottom:0.5rem;
+    }
+    section .wave4{
+        animation: animate 20s linear infinite;
+        z-index: 1;
+        opacity: 0.2;
+        animation-delay: -8s;
+        bottom:0;
+    }
+    
+    
+    a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    a:visited{
+        color: white; 
+    }
+    
+    figure{
+        margin-bottom: -10rem;
+    }
+    
+    figure > img{
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    button{
+        cursor: pointer;
+        position: absolute;
+        display: inline-block;
+        height:10vh;
+        width:70vw;
+        color:black;
+        border: #2d91c2 solid 4px;
+        border-radius: 0.4rem;
+        bottom:0;
+        z-index: 1;
+    }
+
+    .tsunami{
+        top:60%;
+        background: white;
+        background-repeat: repeat-x;
+        animation: animate-b 8s linear infinite;
+    }
+    
+    .aardbeving{
+        top:40%;
+        background: burlywood;
+    }
+    
+    .tsunami:hover{
+        background:#2d91c2;
+        transition: 0.3s;
+        border:white solid 4px;
+        font-weight: bold;
+        
+    }
+    .aardbeving:hover{
+        background: burlywood;
+        transition: 0.3s;
+        border:white solid 4px;
+        font-weight: bold;
+    }
+    
+    
+    .bovenwater{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%)
+    }
+    
+    .sun {
+        width: 10rem;
+        height: 10rem;
+        background-color: #FFDE00;
+        border-radius: 50%;
+        position: absolute;
+        margin-left: 5rem;
+        margin-top: -20rem;
+        box-shadow:
+            0 0 0 20px #FFDE0080,
+            0 0 0 40px #FFDE0040,
+            0 0 0 60px #FFDE0020,
+            0 0 0 80px #FFDE0010,
+            0 0 0 100px #FFDE0000,
+            0 0 40px 100px #FFDE0010;
+        animation:
+            sunrise 2s infinite linear forwards,
+            rays 2s 2s infinite linear;
+    }
+    
+    .boat{
+
+        width: 100vw;
+        animation: boot-ani 10s linear infinite;
+        margin-bottom: -15rem;
+    }
+    
+
+    
+    
+    
+    .underwater{
+        z-index: 1000;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        width:100%;
+        
+    }
+    
+    
+    
+    
+    
+    @keyframes animate-b{
+        0%{
+            background-position-x: 0;
+        }
+        100%{
+            background-position-x: 50rem;
+    
+        }
+    }
+    
+    @keyframes boot-ani{
+        0% {transform:  translateX(-20rem) rotate(10deg); }
+        25% {transform: translateX(-5rem) rotate(-10deg); }
+        50% {transform: translateX(10rem) rotate(10deg); }
+        75% {transform: translateX(-5rem) rotate(-10deg); }
+    
+        100% {transform: translateX(-20rem) rotate(10deg); }
+    }
+    
+    @keyframes animate{
+        0%{
+            background-position-x: 0;
+        }
+        100%{
+            background-position-x: 100rem;
+        }
+    }
+    
+    
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    
+    @keyframes shake2 {
+        0% { -webkit-transform: translate(2px, 1px) rotate(0deg); } 
+        10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+        30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+        40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+        50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+        70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+        80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+        90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+        100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    
+    
+    @keyframes sunrise {
+        0% {
+            box-shadow: none;
+        }
+    }
+    
+    @keyframes rays {
+        0% {
+            box-shadow: 
+            0 0 0 0 #FFDE0080,
+            0 0 0 20px #FFDE0080,
+            0 0 0 40px #FFDE0040,
+            0 0 0 60px #FFDE0020,
+            0 0 0 80px #FFDE0010,
+            0 0 40px 100px #FFDE0010;
+        }
+        100% {
+            box-shadow: 
+            0 0 0 20px #FFDE0080,
+            0 0 0 40px #FFDE0040,
+            0 0 0 60px #FFDE0020,
+            0 0 0 80px #FFDE0010,
+            0 0 0 100px #FFDE0000,
+            0 0 40px 100px #FFDE0010;
+        }
+    }
+  }
+
+
+@media (min-width: 600px){
+
+    .boat{
+        width: 50vw;
+        margin-bottom: -18rem;
+    }
+    button{
+        width: 20rem;
     }
 }
 
-@keyframes animate{
-    0%{
-        background-position-x: 0;
+
+@media (min-width: 900px){
+
+    .boat{
+        width: 50vw;
+        margin-bottom: -13rem;
     }
-    100%{
-        background-position-x: 100rem;
+}
+
+@media (min-width: 1200px){
+
+    .boat{
+        width: 50vw;
+        margin-bottom: -10rem;
     }
+
+    .sun{
+        left:0;
+    }
+  
 }
-
-
-
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-@keyframes shake2 {
-    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); } 
-    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
-}
-
