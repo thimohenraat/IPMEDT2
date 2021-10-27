@@ -6,6 +6,16 @@
     scroll-behavior: smooth;
 }
 
+body{
+    opacity: 1;
+    transition: 10s opacity;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
+
 
 
 @media (min-width: 400px) {
