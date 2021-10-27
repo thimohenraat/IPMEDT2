@@ -156,10 +156,6 @@
         margin-bottom: -15rem;
     }
     
-
-    
-    
-    
     .underwater{
         z-index: 1000;
         position: relative;
@@ -170,10 +166,6 @@
         width:100%;
         
     }
-    
-    
-    
-    
     
     @keyframes animate-b{
         0%{
