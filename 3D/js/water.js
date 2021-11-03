@@ -2,12 +2,6 @@ const golf = document.querySelectorAll("#golf1, #golf2, #golf3, #golf4");
 const buttonTsunami = document.getElementById("tsunami");
 const buttonQuake = document.getElementById("quake");
 
-
-
-window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.remove('fade-out');
-  });
-
 buttonTsunami.onclick = () => {
     golf.forEach(element => {
         element.style.height = "80vh";
@@ -29,5 +23,9 @@ buttonQuake.onclick = () => {
         buttonQuake.style.animation = "none";
      }, 3000);
 };
+
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+  });
 
 

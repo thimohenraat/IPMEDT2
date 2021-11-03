@@ -1,20 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
     font-size: 20px;
+    
     scroll-behavior: smooth;
 }
 
-body{
+body {
     opacity: 1;
-    transition: 0.1s opacity;
-}
+    transition: 3s opacity;
+  }
+  
+  body.fade-out {
+    opacity: 0;
+    transition: none;
+  }
 
-body.fade-out {
-  opacity: 0;
-  transition: none;
-}
 
 
 
@@ -103,6 +107,10 @@ body.fade-out {
         border-radius: 0.4rem;
         bottom:0;
         z-index: 1;
+        font-family: 'EB Garamond', serif;
+        font-weight: 800;
+        font-size: 30px;
+        letter-spacing: 0.1em;
     }
 
     .tsunami{
@@ -116,19 +124,7 @@ body.fade-out {
         top:60%;
         background: linear-gradient(to bottom, #28AD43 0%,#196E2A 100%);
     }
-    
-    .tsunami:hover{
-        transition: 0.3s;
-        border:white solid 4px;
-        font-weight: bold;
-        
-    }
-    .aardbeving:hover{
-        transition: 0.3s;
-        border:white solid 4px;
-        font-weight: bold;
-    }
-    
+
     
     .bovenwater{
         display: flex;
