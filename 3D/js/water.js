@@ -2,10 +2,6 @@ const golf = document.querySelectorAll("#golf1, #golf2, #golf3, #golf4");
 const buttonTsunami = document.getElementById("tsunami");
 const buttonQuake = document.getElementById("quake");
 
-window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.remove('fade-out');
-  });
-
   function getOffset(el) {
     const rect = el.getBoundingClientRect();
     return {
@@ -61,7 +57,8 @@ const observerText = new IntersectionObserver(entries => {
   });
 
   const makePicture = () => {
-    document.querySelector('body').style.background = "#FFFFFF";
+    document.body.classList.add('fade-out');
+    // document.querySelector('body').style.background = "#FFFFFF";
     setTimeout(() => { 
       window.location.href = "plaatje2.html";
     }, 1000);
@@ -70,7 +67,7 @@ const observerText = new IntersectionObserver(entries => {
   let photo_icon = document.getElementById('photoIcon');
   
   photo_icon.addEventListener("click", makePicture);
-  
+
 
 
 

@@ -11,7 +11,7 @@
     <script>
         // inline script is de enige manier om dit effect te laten werken, zodra de body word ingeladen.
         document.body.classList.add('fade-out');
-      </script>
+    </script>
 
     <section class="bovenwater">
         <div class="sun"></div>
@@ -19,7 +19,6 @@
         <button id="tsunami" class="tsunami">Tsunami</button>
         <button id="quake" class="aardbeving">Aardbeving</button>
 
-    
         <img class="boat" src="/images/boat.png" alt="boot">
         <div id="golf1" class="wave wave1"></div>
         <div id="golf2" class="wave wave2"></div>
@@ -57,6 +56,11 @@
             <img src="images/photo_camera_white.svg" class="photo__icon" id="photoIcon" alt="camera icon">
         </section>
     </section>
+    <script>       
+        window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.remove('fade-out');
+      });
+    </script>
    
 </body>
 <script src="/js/water.js"></script>
