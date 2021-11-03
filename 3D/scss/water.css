@@ -16,6 +16,45 @@ body.fade-out {
   transition: none;
 }
 
+.text{
+    font-weight: 500;
+    opacity: 0; 
+    margin-top: 10vh;
+    transition: opacity 2.5s ease-in , margin-top 1.5s ease;
+}
+  
+.text__wrapper{
+      font-size: 1.5rem;
+      text-align: center; 
+      place-self: center;
+      background: rgba(0, 0, 0, 0);
+      grid-column-start: 1;
+      grid-column-end: 4;
+      padding: 0 3rem;
+}
+  
+.text__transition {
+      opacity: 1;
+      margin-top: 0;
+}
+  
+.text__1{
+      grid-row: 2;
+} 
+.text__2{
+      grid-row: 3;
+}
+.text__3{
+      grid-row: 4;
+} 
+.text__4{
+      grid-row: 5;
+}
+.text__5{
+    grid-row: 6;
+}
+  
+
 
 
 @media (min-width: 400px) {
@@ -26,11 +65,11 @@ body.fade-out {
         height: 100vh;
         background: linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%);
         overflow: hidden;
-    }
+    } 
     
     section .wave{
         position: absolute;
-        bottom: 0;
+        bottom: 0; 
         left: 0;
         width: 1200vw;
         height: 20vh;  /* Deze altijd zelfde rem als background size*/ 
@@ -83,13 +122,10 @@ body.fade-out {
         color: white; 
     }
     
-    figure{
-        margin-bottom: -10rem;
-    }
-    
     figure > img{
         width: 10rem;
         height: 10rem;
+        margin-bottom: 100rem;
     }
     
     button{
@@ -170,10 +206,17 @@ body.fade-out {
         display: flex;
         justify-content: center;
         align-items: center;
-        height:100vh;
+        height:100%;
         width:100%;
         
     }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 50vh);
+        justify-items: center;
+    } 
     
     @keyframes animate-b{
         0%{
@@ -291,6 +334,11 @@ body.fade-out {
 
     .sun{
         left:0;
+    }
+
+    .text__wrapper{
+        grid-column-start: 2;
+        grid-column-end: 3;
     }
   
 }

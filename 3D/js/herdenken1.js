@@ -1,5 +1,5 @@
-const boeket = document.querySelectorAll(".boeket__1, .boeket__2, .boeket__3");
-const kinderen = document.querySelectorAll(".kindje__1, .kindje__2, .kindje__3");
+const boeket = document.getElementById("js--boeket");
+const kinderen = document.getElementById("js--kind");
 
 var isMobile = false; //initiate as false
 // device detection
@@ -12,6 +12,7 @@ console.log(isMobile);
 const mover = (element) => {
     if (isMobile){
         element.ontouchstart = (e) => {
+            element.style.position = "absolute";
             //waar is de muis tenopzichte van het plaatje
             let rect = e.target.getBoundingClientRect();
             let thisX = e.targetTouches[0].pageX - rect.left;
@@ -26,17 +27,17 @@ const mover = (element) => {
                 //kijk of een bloem over een kind gaat
                 let boeketPadding = boeketRect.width / 2;
                 document.ontouchend  = () => {
-                    kinderen.forEach(kind => {
+                    // kinderen.forEach(kind => {
                         //kijk waar de opppervlakte van de kinderen
-                        let kindRect = kind.getBoundingClientRect();
+                        let kindRect = kinderen.getBoundingClientRect();
                         if (boeketRect.x + boeketPadding < kindRect.x + kindRect.width &&
                             boeketRect.x + boeketRect.width - boeketPadding > kindRect.x &&
                             boeketRect.y + boeketPadding < kindRect.y + kindRect.height &&
                             boeketRect.height + boeketRect.y - boeketPadding > kindRect.y) {
                                 element.style.opacity = 0;
-                                kind.style.opacity = 0;
+                                kinderen.style.opacity = 0;
                         }
-                    })
+                    // })
                      //stop met bewegen als er niet meer geklikt word
                     document.ontouchmove  = () => {
                         // niks
@@ -49,11 +50,12 @@ const mover = (element) => {
     }
 
     element.onmousedown = (e) => {
+        element.style.position = "absolute";
         //waar is de muis tenopzichte van het plaatje
         let thisY = e.offsetY;
         let thisX = e.offsetX;
         document.onmousemove = (e) => {
-            console.log(e);
+            console.log(element);
             //kijk waar oppervlakte de bloem is
             let boeketRect = element.getBoundingClientRect()
 
@@ -64,17 +66,17 @@ const mover = (element) => {
             //kijk of een bloem over een kind gaat
             let boeketPadding = boeketRect.width / 2;
             document.onmouseup = () => {
-                kinderen.forEach(kind => {
+                // kinderen.forEach(kind => {
                     //kijk waar de opppervlakte van de kinderen
-                    let kindRect = kind.getBoundingClientRect();
+                    let kindRect = kinderen.getBoundingClientRect();
                     if (boeketRect.x + boeketPadding < kindRect.x + kindRect.width &&
                         boeketRect.x + boeketRect.width - boeketPadding > kindRect.x &&
                         boeketRect.y + boeketPadding < kindRect.y + kindRect.height &&
                         boeketRect.height + boeketRect.y - boeketPadding > kindRect.y) {
                             element.style.opacity = 0;
-                            kind.style.opacity = 0;
+                            kinderen.style.opacity = 0;
                     }
-                })
+                // })
                  //stop met bewegen als er niet meer geklikt word
                 document.onmousemove = () => {
                     // niks
@@ -87,6 +89,4 @@ const mover = (element) => {
 
 }
 
-boeket.forEach(bloem => {
-    mover(bloem);
-});
+mover(boeket);
