@@ -21,6 +21,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -63,6 +64,7 @@ main {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  cursor: pointer;
 }
 
 .scroll__text {

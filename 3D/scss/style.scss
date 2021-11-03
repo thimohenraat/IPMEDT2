@@ -17,6 +17,7 @@ canvas{
 body{
   display: flex;
   justify-content: center;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -52,6 +53,7 @@ $color: #ffffff50;
   grid-column: 2;
   grid-row: 2;
   align-self: end;
+  cursor: pointer;
 
   &__text{
     margin: 0;

@@ -11,7 +11,7 @@
 
     <script>
         document.body.classList.add('fade-out');
-      </script>
+    </script>
 
 
     <section class="bovenwater">
@@ -19,13 +19,7 @@
 
         <button id="tsunami" class="tsunami">Tsunami</button>
         <button id="quake" class="aardbeving">Aardbeving</button>
-        
 
-        <!-- <img src="/img/wave.png" class="wave wave1" alt="plaatje van golf">
-        <img src="/img/wave.png" class="wave wavez wave1" alt="plaatje van golf">
-
-        <img src="/img/wave.png" class="wave wave1" alt="plaatje van golf">
-        <img src="/img/wave.png" class="wave wavez wave1" alt="plaatje van golf">  -->
         <img class="boat" src="/images/boat.png" alt="boot">
         <div id="golf1" class="wave wave1"></div>
         <div id="golf2" class="wave wave2"></div>
@@ -33,10 +27,41 @@
         <div id="golf4" class="wave wave4"></div>
     </section>
 
-    <section class="underwater">
-        <figure class="flower"><img id="bloem" src="/images/bloem.png" alt="flower"></figure>
-    </section>
+    <section class="underwater container">
+        <section class="text__wrapper text__1" id="scrolling">
+            <p class="text">
+                Azuma heeft niet alleen bloemen gefotografeert in de ruimte
+            </p>
+        </section>
 
+        <section class="text__wrapper text__2">
+            <p class="text">
+                Maar zelfs in de donkere en diepe oceaan heeft Azuma het voor elkaar gekregen om een boeket daar te fotograferen.
+            </p> 
+        </section>
+
+        <section class="text__wrapper text__3">
+            <p class="text"> 
+                Dit was een lastig project, omdat hij niet zelf onderwater kon gaan door de druk en omdat er geen licht is in het diepste deel van de oceaan.
+            </p>
+        </section>
+        
+        <section class="text__wrapper text__4">
+            <p class="text"> 
+                Nu aan jou de taak om deze bloem te fotograferen onderwater.
+            </p>
+        </section>
+
+        <section class="text__wrapper text__5">
+            <figure class="text"><img src="/images/bloem.png" alt="flower"></figure>
+            <img src="images/photo_camera_white.svg" class="photo__icon" id="photoIcon" alt="camera icon">
+        </section>
+    </section>
+    <script>       
+        window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.remove('fade-out');
+      });
+    </script>
    
 </body>
 <script src="/js/water.js"></script>

@@ -209,3 +209,11 @@ let photo_icon = document.getElementById('photoIcon');
 
 photo_icon.addEventListener("click", makePicture);
 
+
+const scroll = document.getElementById("scroll");
+let pageHeight = window.innerHeight;
+
+scroll.onclick = () => {
+    console.log("yo");
+    window.scroll(0, pageHeight, 'smooth');
+};
