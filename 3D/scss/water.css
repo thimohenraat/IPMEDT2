@@ -39,21 +39,20 @@ body.fade-out {
 }
   
 .text__1{
-      grid-row: 2;
+    grid-row: 2;
 } 
 .text__2{
-      grid-row: 3;
+    grid-row: 3;
 }
 .text__3{
-      grid-row: 4;
+    grid-row: 4;
 } 
 .text__4{
-      grid-row: 5;
+    grid-row: 5;
 }
 .text__5{
     grid-row: 6;
 }
-  
 
 
 
@@ -217,6 +216,17 @@ body.fade-out {
         grid-template-rows: repeat(6, 50vh);
         justify-items: center;
     } 
+
+    .photo__icon{
+        position: absolute;
+        bottom: 20rem;
+        width: 20vw;
+        text-align: center;
+        right: 50%;
+        transform: translate(50%,-50%);
+    }
+    
+    
     
     @keyframes animate-b{
         0%{
@@ -314,7 +324,18 @@ body.fade-out {
     button{
         width: 20rem;
     }
+
+    .photo__icon{
+        width: 15vw;
+    }
 }
+
+@media (min-width: 700px){
+    .photo__icon{
+        bottom: 10rem;
+    }
+}
+
 
 
 @media (min-width: 900px){
@@ -340,5 +361,10 @@ body.fade-out {
         grid-column-start: 2;
         grid-column-end: 3;
     }
-  
+
+    .photo__icon{
+        width: 10vw;
+        bottom: 10rem;
+    }
 }
+  

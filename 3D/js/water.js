@@ -59,6 +59,17 @@ const observerText = new IntersectionObserver(entries => {
       observerText.observe(i);
     }
   });
+
+  const makePicture = () => {
+    document.querySelector('body').style.background = "#FFFFFF";
+    setTimeout(() => { 
+      window.location.href = "plaatje2.html";
+    }, 1000);
+  }
+  
+  let photo_icon = document.getElementById('photoIcon');
+  
+  photo_icon.addEventListener("click", makePicture);
   
 
 

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background: center/cover no-repeat url("../images/Bloem_water.png");
+  height: 100%;
+}
+
+.kunstwerk {
+  position: absolute;
+  bottom: 5vh;
+  left: 5vw;
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 1.2rem;
+  color: white;
+}
+/*# sourceMappingURL=plaatje2.css.map */
