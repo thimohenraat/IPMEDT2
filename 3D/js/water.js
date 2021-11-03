@@ -2,6 +2,7 @@ const golf = document.querySelectorAll("#golf1, #golf2, #golf3, #golf4");
 const buttonTsunami = document.getElementById("tsunami");
 const buttonQuake = document.getElementById("quake");
 
+
 buttonTsunami.onclick = () => {
     golf.forEach(element => {
         element.style.height = "70vh";
@@ -24,10 +25,6 @@ buttonQuake.onclick = () => {
         buttonQuake.style.animation = "none";
      }, 3000);
 };
-
-window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.remove('fade-out');
-  });
 
 
 const observerText = new IntersectionObserver(entries => {
@@ -63,7 +60,6 @@ const observerText = new IntersectionObserver(entries => {
   let photo_icon = document.getElementById('photoIcon');
   
   photo_icon.addEventListener("click", makePicture);
-
 
 
 
