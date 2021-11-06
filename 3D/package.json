@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "parcel build index.html plaatje.html plaatje2.html water.html herdenken.html",
+    "build": "parcel build index.html plaatje.html plaatje2.html water.html herdenken.html plaatje3.html",
     "serve": "vite preview",
-    "parcelDev": "parcel index.html plaatje.html water.html plaatje2.html herdenken.html"
+    "parcelDev": "parcel index.html plaatje.html water.html plaatje2.html herdenken.html plaatje3.html"
   },
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",

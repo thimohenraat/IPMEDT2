@@ -27,7 +27,7 @@ main {
   font-family: 'EB Garamond', serif;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 50vh);
+  grid-template-rows: repeat(7, 50vh); 
   justify-items: center;
   transition: background 1s;
 }
@@ -61,7 +61,7 @@ $color: #ffffff50;
   &__arrow{
     padding-bottom: 2vh;
   }
-}
+} 
  
 .photo{
   grid-column: 2;
@@ -69,11 +69,11 @@ $color: #ffffff50;
   align-self: end;
 
   &__icon{
-    width: 5rem;
+    width: 6rem;
   }
 } 
 
-.text{
+.text{ 
   font-weight: 500;
   opacity: 0; 
   margin-top: 10vh;
@@ -81,8 +81,8 @@ $color: #ffffff50;
 
   &__wrapper{
     font-size: 1.5rem;
-    text-align: center;
-    place-self: center;
+    text-align: center; 
+    place-self: center; 
   }
 
   &__transition {

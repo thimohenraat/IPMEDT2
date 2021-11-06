@@ -21,6 +21,7 @@ body.fade-out {
 
 .text{
     font-weight: 500;
+    font-size: 2rem;
     opacity: 0; 
     margin-top: 10vh;
     transition: opacity 2.5s ease-in , margin-top 1.5s ease;
@@ -28,11 +29,12 @@ body.fade-out {
   
 .text__wrapper{
       font-size: 1.5rem;
+      color: white;
       text-align: center; 
       place-self: center;
       background: rgba(0, 0, 0, 0);
-      grid-column-start: 1;
-      grid-column-end: 4;
+      grid-column-start: 2;
+      grid-column-end: 5;
       padding: 0 3rem;
 }
   
@@ -65,7 +67,7 @@ body.fade-out {
         position: relative;
         width: 100%;
         height: 100vh;
-        background: linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%);
+        background: linear-gradient(to bottom, #2d91c2 0%,#102a49 100%);
         overflow: hidden;
     } 
     
@@ -79,7 +81,7 @@ body.fade-out {
         background-size: 40rem 40rem;
         background-repeat: repeat-x;
         transition: ease-in 2s;
-        }
+    }
     
     section .wave1{
         animation: animate 30s linear infinite;
@@ -109,6 +111,11 @@ body.fade-out {
         opacity: 0.2;
         animation-delay: -8s;
         bottom:0;
+    }
+    
+
+    .text{
+        font-size: 1.3rem;
     }
     
     
@@ -217,15 +224,15 @@ body.fade-out {
 
     .container{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(6, 50vh);
         justify-items: center;
     } 
 
     .photo__icon{
         position: absolute;
-        bottom: 20rem;
-        width: 20vw;
+        bottom: 100rem;
+        width: 6rem;
         text-align: center;
         right: 50%;
         transform: translate(50%,-50%);
@@ -329,16 +336,15 @@ body.fade-out {
     button{
         width: 20rem;
     }
-
     .photo__icon{
-        width: 15vw;
+        bottom:10rem;
     }
 }
 
 @media (min-width: 700px){
     .photo__icon{
         bottom: 10rem;
-    }
+    }   
 }
 
 
@@ -349,6 +355,7 @@ body.fade-out {
         width: 50vw;
         margin-bottom: -13rem;
     }
+
 }
 
 @media (min-width: 1200px){
@@ -364,12 +371,7 @@ body.fade-out {
 
     .text__wrapper{
         grid-column-start: 2;
-        grid-column-end: 3;
-    }
-
-    .photo__icon{
-        width: 10vw;
-        bottom: 10rem;
+        grid-column-end: 5;
     }
 }
   

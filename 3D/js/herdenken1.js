@@ -2,6 +2,7 @@ const boeket = document.getElementById("js--boeket");
 const kinderen = document.getElementById("js--kind");
 const text = document.getElementById("verander");
 const textWeg = document.getElementById("veranderWeg");
+const body = document.querySelector("body");
 
 var isMobile = false; //initiate as false
 // device detection
@@ -38,8 +39,15 @@ const mover = (element) => {
                             boeketRect.height + boeketRect.y - boeketPadding > kindRect.y) {
                                 element.style.opacity = 0;
                                 kinderen.style.opacity = 0;
-                                text.innerHTML = "Na de ramp in Kyoto, wijde monniken bloemen aan slachtoffers en bidde elke ochtend. Wanneer het bidden klaar was gingen de monniken de wonden verzorgen van de slachtoffers, en hen ook voeden. Dat is het ware doel van iemand die bloemen schikt. Dit is echt punk, volgens Azuma. Het gaat niet alleen over de bloemen, maar ook over je gebeden en die toevertrouwen aan de bloemen. Bloemen schikken in ramspoed is Azuma’s doel.";
-                                textWeg.innerHTML = "";
+                                body.style.pointerEvents = 'none';
+
+                                text.style.opacity = 0;
+                                textWeg.style.opacity = 0;
+                                setTimeout( () => {
+                                    text.innerHTML = "Na de ramp in Kyoto, wijde monniken bloemen aan slachtoffers en bidde elke ochtend. Wanneer het bidden klaar was gingen de monniken de wonden verzorgen van de slachtoffers, en hen ook voeden. Dat is het ware doel van iemand die bloemen schikt. Dit is echt punk, volgens Azuma. Het gaat niet alleen over de bloemen, maar ook over je gebeden en die toevertrouwen aan de bloemen. Bloemen schikken in ramspoed is Azuma’s doel.";
+                                    textWeg.innerHTML = "";
+                                    text.style.opacity = 1;
+                                }, 1500);
                             }
                     // })
                      //stop met bewegen als er niet meer geklikt word
@@ -79,8 +87,15 @@ const mover = (element) => {
                         boeketRect.height + boeketRect.y - boeketPadding > kindRect.y) {
                             element.style.opacity = 0;
                             kinderen.style.opacity = 0;
-                            text.innerHTML = "Na de ramp in Kyoto, wijde monniken bloemen aan slachtoffers en bidde elke ochtend. Wanneer het bidden klaar was gingen de monniken de wonden verzorgen van de slachtoffers, en hen ook voeden. Dat is het ware doel van iemand die bloemen schikt. Dit is echt punk, volgens Azuma. Het gaat niet alleen over de bloemen, maar ook over je gebeden en die toevertrouwen aan de bloemen. Bloemen schikken in ramspoed is Azuma’s doel.";
-                            textWeg.innerHTML = "";
+                            body.style.pointerEvents = 'none';
+
+                            text.style.opacity = 0;
+                            textWeg.style.opacity = 0;
+                            setTimeout( () => {
+                                text.innerHTML = "Na de ramp in Kyoto, wijde monniken bloemen aan slachtoffers en bidde elke ochtend. Wanneer het bidden klaar was gingen de monniken de wonden verzorgen van de slachtoffers, en hen ook voeden. Dat is het ware doel van iemand die bloemen schikt. Dit is echt punk, volgens Azuma. Het gaat niet alleen over de bloemen, maar ook over je gebeden en die toevertrouwen aan de bloemen. Bloemen schikken in ramspoed is Azuma’s doel.";
+                                textWeg.innerHTML = "";
+                                text.style.opacity = 1;
+                            }, 1500);
                         }
                 // })
                  //stop met bewegen als er niet meer geklikt word
