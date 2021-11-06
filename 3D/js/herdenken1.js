@@ -47,6 +47,12 @@ const mover = (element) => {
                                     text.innerHTML = "Na de ramp in Kyoto, wijde monniken bloemen aan slachtoffers en bidde elke ochtend. Wanneer het bidden klaar was gingen de monniken de wonden verzorgen van de slachtoffers, en hen ook voeden. Dat is het ware doel van iemand die bloemen schikt. Dit is echt punk, volgens Azuma. Het gaat niet alleen over de bloemen, maar ook over je gebeden en die toevertrouwen aan de bloemen. Bloemen schikken in ramspoed is Azuma’s doel.";
                                     textWeg.innerHTML = "";
                                     text.style.opacity = 1;
+                                    setTimeout( () => {
+                                        window.location.href = "plaatje3.html"
+                                    }, 15000);
+                                    window.onclick = () => {
+                                        window.location.href = "plaatje3.html"
+                                    }
                                 }, 1500);
                             }
                     // })
@@ -95,6 +101,12 @@ const mover = (element) => {
                                 text.innerHTML = "Na de ramp in Kyoto, wijde monniken bloemen aan slachtoffers en bidde elke ochtend. Wanneer het bidden klaar was gingen de monniken de wonden verzorgen van de slachtoffers, en hen ook voeden. Dat is het ware doel van iemand die bloemen schikt. Dit is echt punk, volgens Azuma. Het gaat niet alleen over de bloemen, maar ook over je gebeden en die toevertrouwen aan de bloemen. Bloemen schikken in ramspoed is Azuma’s doel.";
                                 textWeg.innerHTML = "";
                                 text.style.opacity = 1;
+                                setTimeout( () => {
+                                    window.location.href = "plaatje3.html"
+                                }, 15000);
+                                window.onclick = () => {
+                                    window.location.href = "plaatje3.html"
+                                }
                             }, 1500);
                         }
                 // })

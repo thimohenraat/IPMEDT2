@@ -32,7 +32,13 @@ body, html {
   color: white;
 }
 
-.Tekst__3 {
+.tekst__3 {
   margin-top: 6rem;
+}
+
+@media (min-width: 400px) {
+  .tekst {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=plaatje3.css.map */
