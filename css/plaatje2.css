@@ -17,12 +17,13 @@ body, html {
   background: center/cover no-repeat url("../images/bloem_water.png");
   height: 100%;
 }
- 
+
 .kunstwerk {
   position: absolute;
   bottom: 5vh;
   left: 5vw;
-  font-family: 'Hachi Maru Pop', cursive; 
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 1.2rem;
   color: white;
 }
 /*# sourceMappingURL=plaatje2.css.map */

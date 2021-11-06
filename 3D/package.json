@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "parcel build index.html plaatje.html plaatje2.html water.html herdenken.html plaatje3.html",
+    "build": "parcel build index.html plaatje.html plaatje2.html water.html herdenken.html plaatje3.html scss/style.scss",
     "serve": "vite preview",
     "parcelDev": "parcel index.html plaatje.html water.html plaatje2.html herdenken.html plaatje3.html"
   },
