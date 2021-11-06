@@ -31,12 +31,17 @@ body, html {
   color: white;
 } 
 
-.tekst__3{
-  margin-top: 6rem;
-}
-
-@media (min-width: 400px) {
-  .tekst{
-    font-size: 1.5rem;
+  .tekst__3{
+    margin-top: 6rem;
   }
-}
+  
+  @media (min-width: 400px) {
+    .tekst{
+      font-size: 1.5rem;
+      width: 80vw;
+      text-align: center;
+
+    }
+
+
+  }
